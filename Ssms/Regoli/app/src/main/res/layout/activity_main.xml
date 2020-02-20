@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="header"
+        android:scaleType="fitXY"
+
+        />
+            <!--this is for first page-->
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:id="@+id/first_layout"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Welcome"
+            android:textColor="#1b1b1b"
+            android:layout_marginStart="10dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:textColor="#606060"
+            android:text="This is a platform for asking for help and also providing donation assistance"
+            android:textSize="17dp"
+            android:layout_marginStart="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:fontFamily="@font/cantora_one"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:background="@drawable/login_button_background"
+                android:textColor="#ffce4310"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:id="@+id/create_account"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:fontFamily="@font/cantora_one"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/create_account_background"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+            <!--this is second layout page-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Create Account"
+
+            android:textColor="#1b1b1b"
+            android:layout_marginStart="20dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="20dp"
+            android:textColor="#606060"
+            android:text="Please enter your mobile number"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <EditText
+                android:id="@+id/edit_phnnumber"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="enter number"
+
+                android:fontFamily="@font/cantora_one"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                />
+            <ImageButton
+                android:id="@+id/btn_phnnumber"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+            <!--this is third layout page-->
+    <LinearLayout
+        android:id="@+id/third_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_margin="20dp"
+        >
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            />
+
+    </LinearLayout>
+
+
+            <!--this is fourth layout page-->
+    <LinearLayout
+        android:id="@+id/fourth_layouts"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Verify"
+
+            android:textColor="#1b1b1b"
+            android:layout_marginStart="20dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="20dp"
+            android:textColor="#606060"
+            android:text="Please enter the verification code that you received on your number below"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="20dp"
+            android:textColor="#606060"
+            android:text="+919687989536"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:id="@+id/verified_number"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="enter code"
+
+                android:fontFamily="@font/cantora_one"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                />
+            <ImageButton
+                android:id="@+id/btn_verified"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+    </LinearLayout>
+    </LinearLayout>
+
+
+        <!--this is fifth layout page-->
+    <LinearLayout
+        android:id="@+id/fifth_layouts"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Your Name"
+            android:textColor="#1b1b1b"
+            android:layout_marginStart="20dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="20dp"
+            android:textColor="#606060"
+            android:text="Please enter your good name below"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="enter name"
+
+                android:fontFamily="@font/cantora_one"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                />
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+        <!--this is sixth layout page-->
+    <LinearLayout
+        android:id="@+id/sixth_layouts"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Your E-mail"
+            android:textColor="#1b1b1b"
+            android:layout_marginStart="20dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="20dp"
+            android:textColor="#606060"
+            android:text="Please enter your E-mail below"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="enter youe E-mail"
+
+                android:fontFamily="@font/cantora_one"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                />
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+        <!--this is Seventh layout page-->
+    <LinearLayout
+        android:id="@+id/seventh_layouts"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Choose Blood Type"
+            android:textColor="#1b1b1b"
+            android:layout_marginStart="20dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="20dp"
+            android:textColor="#606060"
+            android:text="Please choose your blood type. When someone near you needs a blood that matches your blood type. We will send you a notification."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/cantora_one"
+                android:textSize="18sp"
+                android:text="A"
+                android:textColor="#fff"
+                android:background="@drawable/bldgrp_btn_background"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/cantora_one"
+                android:textSize="18sp"
+                android:text="B"
+                android:textColor="#fff"
+                android:background="@drawable/bldgrp_btn_background"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/cantora_one"
+                android:textSize="18sp"
+                android:text="AB"
+                android:textColor="#fff"
+                android:background="@drawable/bldgrp_btn_background"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/cantora_one"
+                android:textSize="18sp"
+                android:text="O"
+                android:textColor="#fff"
+                android:background="@drawable/bldgrp_btn_background"/>
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--this is eight layout page-->
+    <LinearLayout
+        android:id="@+id/eight_layouts"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Choose Blood RhD"
+            android:textColor="#1b1b1b"
+            android:layout_marginStart="20dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:layout_marginStart="20dp"
+            android:textColor="#606060"
+            android:text="Please choose your blood RhD, means your choosen blood tye is positive or negative. Your choosen blood type is:"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Positive"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:fontFamily="@font/cantora_one"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/create_account_background"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Negative"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:fontFamily="@font/cantora_one"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/create_account_background"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
